@@ -22,7 +22,7 @@ practical work in the rest of the course.
 
 ## Architecture
 
-The ARCHER2 hardware is an HPE Cray EX system consists of a number of different node types. The ones visible
+The ARCHER2 hardware is an HPE Cray EX system consisting of a number of different node types. The ones visible
 to users are:
 
 * Login nodes
@@ -146,7 +146,7 @@ ssh auser@login.archer2.ac.uk
 (Remember to replace `auser` with your actual username!) On first login, you will be prompted
 to change your password from the intial one you got via SAFE,  This is a three step process:
 
-1. When promoted to enter your LDAP password: Re-enter the password you retrieved from SAFE
+1. When prompted to enter your LDAP password: Re-enter the password you retrieved from SAFE
 2. When prompted to enter your new password: type in a new password
 3. When prompted to re-enter the new password: re-enter the new password
 
