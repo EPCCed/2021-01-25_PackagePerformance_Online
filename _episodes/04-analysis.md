@@ -121,6 +121,8 @@ Cores»    1                  64                 128                192         
 ```
 {: .output}
 
+<img src="{{ page.root }}/fig/perf.png" alt="Performance plot" />
+
 > ## What does this show?
 > You can see that the performance of the calculation part and the overall 
 > performance look different. Can you come up with any explanation for the
@@ -131,6 +133,7 @@ Cores»    1                  64                 128                192         
 > > calculation part. This indicates that there is something else in the
 > > sharpen program that is adversely affecting the performance as we increase
 > > the number of cores.
+> {: .solution}
 {: .challenge}
 
 ## Analysis
@@ -172,7 +175,7 @@ two metrics that we introduced earlier:
 > and hitting `-`. You can unhide all columns once you have finished plotting
 > with `gv`.
 > 
-> ## Solution
+> > ## Solution
 > > ### Computing speedup
 > > Note the value for the "Calc_perf_max" on one core - this is the baseline
 > > performance we are going to use to compute the speedup, in my case it is 
@@ -238,11 +241,13 @@ two metrics that we introduced earlier:
 > > Cores»    1                  64                 128                192                256
 > > 3› benchmark_perf_graph| loading data points | loaded 27 points (0  g.          27 plots 
 > > ```
+> > {: .output}
 > >
 > > You can see that the calculation speedup is much closer to the perfect 
 > > scaling than the overall speedup. You can use `q` to get back to the 
 > > spreadsheet view and `gv` to unhide the hidden columns.
-> > {: .output}
+> >
+> > <img src="{{ page.root }}/fig/speedup.png" alt="Speedup plot" />
 > > 
 > {: .solution}
 {: .challenge}
