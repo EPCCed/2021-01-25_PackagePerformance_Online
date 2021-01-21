@@ -272,8 +272,12 @@ The answer depends on what you are measuring and why. Some examples:
    get through with the current resources you have. In this case, you will
    likely want to take the arithmetic mean of the timings you have and convert this 
    into the performance metric.
-   + Note that you should not generally calculate
-     metrics and then use an arithmetic mean to combine them (TODO: add reasoning)
+   + Note that you should not generally combine rate metric results using the 
+     arithmetic mean as this can lead to incorrect conclusions. It is better
+     to combine results using the timings and the convert this result into the
+     rate. (If you want to combine rate metrics, you can use the harmonic
+     mean rather than the arithmetic mean.) See
+     [Scientific Benchmarking of Parallel Computing Systems](https://spcl.inf.ethz.ch/Teaching/2019-dphpc/hoefler-scientific-benchmarking.pdf)
  - You want an idea of the best case scenario to allow you to compare the
    performance of different HPC systems or parameter choices. In this case,
    you will likely want to take the *best* performance at each of your 
