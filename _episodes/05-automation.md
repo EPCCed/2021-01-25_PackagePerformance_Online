@@ -91,9 +91,10 @@ of a benchmark run.
 > > #SBATCH --nodes=1
 > > #SBATCH --tasks-per-node=1
 > > #SBATCH --cpus-per-task=1
-> > #SBATCH --account=t001        
+> > #SBATCH --account=ta012        
 > > #SBATCH --partition=standard
 > > #SBATCH --qos=standard
+> > #SBATCH --reservation=ta012_89
 > > 
 > > # Setup the job environment (this module needs to be loaded before any other modules)
 > > module load epcc-job-env
@@ -167,9 +168,10 @@ sbatch <<EOF
 #SBATCH --nodes=1
 #SBATCH --tasks-per-node=${ncores}
 #SBATCH --cpus-per-task=1
-#SBATCH --account=t001        
+#SBATCH --account=ta012        
 #SBATCH --partition=standard
 #SBATCH --qos=standard
+#SBATCH --reservation=ta012_89
  
 # Setup the job environment (this module needs to be loaded before any other modules)
 module load epcc-job-env
@@ -307,9 +309,10 @@ in the script.
 > > #SBATCH --nodes=${nnodes}
 > > #SBATCH --tasks-per-node=${ncorespernode}
 > > #SBATCH --cpus-per-task=1
-> > #SBATCH --account=t001        
+> > #SBATCH --account=ta012        
 > > #SBATCH --partition=standard
 > > #SBATCH --qos=standard
+> > #SBATCH --reservation=ta012_89
 > >  
 > > # Setup the job environment (this module needs to be loaded before any other modules)
 > > module load epcc-job-env

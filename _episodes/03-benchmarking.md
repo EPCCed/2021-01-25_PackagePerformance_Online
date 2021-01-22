@@ -164,7 +164,7 @@ our baseline.
 Run the single core calculation with:
 
 ```
-srun --cpu-bind=rank --nodes=1 --ntasks-per-node=1 --time=0:10:0 --account=t001 --partition=standard --qos=standard sharpen-mpi.x > sharpen_1core_001.out
+srun {{ site.workshop_srun_options }} --nodes=1 --ntasks-per-node=1 --time=0:10:0  sharpen-mpi.x > sharpen_1core_001.out
 ```
 {: .language-bash}
 ```
@@ -178,7 +178,7 @@ want to run a calculation so we will setup a command alias with the options
 that will not change each time we run to make things easier:
 
 ```
-alias srunopt="srun --cpu-bind=rank --time=0:10:0 --account=t001 --partition=standard --qos=standard"
+alias srunopt="srun {{ site.workshop_srun_options }}"
 ```
 {: .language-bash}
 
