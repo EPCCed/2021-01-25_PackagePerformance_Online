@@ -21,6 +21,11 @@ Rather than having separate lectures and practical sessions, this course is taug
 learning key skills and information throughout the course. Typically, this follows the method of
 the instructor demonstrating and then the attendees doing along with the instructor.
 
+> ## Not a Carpentries lesson
+> Although we use the Carpentries style of teaching and the Carpentries lesson template, this
+> is not a Carpentries lesson.
+{: .callout}
+
 There are many helpers available to assist you and to answer any questions you may have as we
 work through the material together. You should also feel free to ask questions of the instructor
 whenever you like. The instructor will also provide many opportunities to pause and ask questions.
@@ -41,21 +46,7 @@ use informal and structured feedback activities during the course to ensure we t
 content appropriately for the attendees and feedback after the course to help us improve our training
 for the future.
 
-You will be issued with red and green "stickies" (or shown how to use their virtual equivalent for 
-online courses) to allow you give the instructor and helpers quick visual feedback on how you
-are getting on with the pace and the content of the course. If you are comfortable with the 
-pace/content then you should place your green sticky on the back of your laptop; if you are stuck,
-have questions, or are struggling with the pace/content then you should place the red sticky on
-the back of your laptop and a helper will come and speak to you. The instructor may also ask you
-to use the stickies in other, specific situations.
-
-At the lunch break (and end of days for multi-day courses) we will also run a quick feedback
-activity to gauge how the course is matching onto attendees requirements. Instructors and helpers
-will review this feedback over lunch (or overnight) and provide a summary of what we found at the
-start of the next session and, potentially, how the upcoming materiel/schedule will be changed
-to address the feedback.
-
-Finally, you will be provided with the opportunity to provide feedback on the course after it has
+You will be provided with the opportunity to provide feedback on the course after it has
 finished. We welcome all this feedback, both good and bad, as this information in key to allow
 us to continually improve the training we offer.
 
