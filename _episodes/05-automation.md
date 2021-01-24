@@ -349,6 +349,7 @@ have been used successfully in the past are:
   data and log it.
 - [JUBE](https://www.fz-juelich.de/ias/jsc/EN/Expertise/Support/Software/JUBE/jube.html#:~:text=The%20JUBE%20benchmarking%20environment%20provides,Centre%20of%20Forschungszentrum%20J%C3%BClich%2C%20Germany.) - an HPC benchmarking framework
   developed at the [Jülich Supercomputing Centre](https://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html).
+- [Dakota](https://dakota.sandia.gov/) - advanced parametric study and optimisation tool.
 
 In the final section of this course, we take a brief look at *Profiling* performance of 
 applications on HPC systems.
