@@ -41,7 +41,7 @@ time it will be worth investing in automation.
 
 > ## Many ways to skin a cat!
 > Like many programmatic problems, there are an extremely large number of ways
-> to address this problem. We will cover one apporach here using bash scripting,
+> to address this problem. We will cover one approach here using bash scripting,
 > but that does not mean you could not use Perl, Python or any other language
 > and approach. Often the best choice depends on what toolset you are already
 > familiar with and happy using.
