@@ -208,7 +208,7 @@ ncores=$1
 nruns=$2
 ```
 
-We then use a bash *here document* to pass the script to the `sbatch` command with the
+We then use a bash redirection to pass the script to the `sbatch` command with the
 values of `$ncores` and `$nruns` substituted in in the correct places: the `SBATCH` option
 for `$ncores` and the `seq` command for `$nruns`. One thing to note in the here document
 is that we must *escape* the `$` for variables we want to still be variables in the 
