@@ -147,6 +147,9 @@ timestamp=$(date +%s)
 ```
 {: .language-bash}
 
+(This captures the current epoch time into the `$timestamp` variable. Note that there
+cannot be any spaces on either side of the `=` sign in bash scripts.)
+
 We are going to use a bit of bash scripting to create a version of our job submission
 script that will allow us to specify the values of the variables that we want to 
 change as arguments and that will include the date. First we will show the complete
@@ -208,11 +211,11 @@ ncores=$1
 nruns=$2
 ```
 
-We then use a bash redirection to pass the script to the `sbatch` command with the
+We then use a form of bash redirection called a *here document* to pass the script to the `sbatch` command with the
 values of `$ncores` and `$nruns` substituted in in the correct places: the `SBATCH` option
-for `$ncores` and the `seq` command for `$nruns`. One thing to note in the here document
+for `$ncores` and the `seq` command for `$nruns`. One thing to note in the *here document*
 is that we must *escape* the `$` for variables we want to still be variables in the 
-script by preceeding them with a backslash otherwise bash will try to substitute them
+script by preceding them with a backslash otherwise bash will try to substitute them
 in the same way it does for the `$ncores` and `$nruns` variables. You can see this
 in action in the `for` line, `timestamp` line and the `srun` line: we want these variables to be
 interpreted when the script *runs* so they need to be escaped, the unescaped variables
@@ -227,13 +230,6 @@ Now we have a script that can dynamically take the values we want for benchmarki
 we already have a script that can automatically extract the data from all benchmark
 runs, the final step is to setup the script that can automate the submission of the
 different benchmark cases.
-
-> ## Restricted to a single node?
-> The current script is restricted to running benchmarks on a single node. The part
-> before the here document could be modified to allow it to work with multiple nodes.
-> Please feel free to have a go at this if you want and ask the instructors if you
-> need help.
-{: .callout}
 
 ### Write the benchmark automation script and submit the jobs
 

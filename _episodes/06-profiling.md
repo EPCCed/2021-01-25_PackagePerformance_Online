@@ -10,7 +10,9 @@ objectives:
 - "Understand what profiling is and the type of information it can reveal."
 - "Be able to profile an application without the need to build/compile."
 keypoints:
-- ""
+- "Profiling allows to see what routines are consuming runtime in our application."
+- "Profiling can also provide information on memory use and IO by our application."
+- "The differences between profiles at different node/core counts can be more revealing than a single profile."
 ---
 
 So far in this workshop we have mostly looked at measuring the performance variation
@@ -269,12 +271,13 @@ of cores we are using. So, lets vary this and see how the profile changes.
 > they might affect the performance of the application?
 > Can you guess what might happen if you double the core count again to 
 > 512 cores? Test if your theory is correct by producing the profile.
+> 
 > > ## Solution
 > > You should see the following
 > >
-> >  - MPI proportion: around 20%
-> >  - Memory use: 21,792.3 MiBytes
-> >  - I/O use: Same as for the 64 node case
+> > - MPI proportion: around 20%
+> > - Memory use: 21,792.3 MiBytes
+> > - I/O use: Same as for the 64 node case
 > >
 > > The increase in time in MPI functions mean that more of the runtime of
 > > application is spent communicating between cores using MPI rather than

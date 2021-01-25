@@ -55,7 +55,7 @@ vd benchmark_perf.csv
 ```
 {: .output}
 
-As noted above, VisiData allows us to show scatter plots in the 
+As noted earlier, VisiData allows us to show scatter plots in the 
 terminal to get a quick visual representation of the relationship between the
 data in different columns. To do this, we need to make sure the columns are 
 set to the correct numerical data types and say which one is going to be the 
@@ -91,7 +91,9 @@ to show it has been set as the categorical data.
 Finally, we can plot the graph by hitting `g.` (`g` followed by a period). You
 should see something like the plot shown below which shows the variation of 
 maximum performance for the calculation part of Sharpen and the overall 
-performance of Sharpen (calculation and IO).
+performance of Sharpen (calculation and IO). (We have also included a plot
+of the same data in Excel as it is difficult to see the terminal plot in the
+web interface for the course.)
 
 ```
 21.50                                                                 1:Calc_perf_max ⠁
@@ -122,6 +124,12 @@ Cores»    1                  64                 128                192         
 {: .output}
 
 <img src="{{ page.root }}/fig/perf.png" alt="Performance plot" />
+
+> ## Plotting timing data
+> Use Visidata to plot the timing data rather than the peformance. Looking
+> at the timing plot, can you think of a reason why plotting the performance
+> data is often preferred over plotting the raw timing data.
+{: .callout} 
 
 > ## What does this show?
 > You can see that the performance of the calculation part and the overall 
@@ -392,7 +400,7 @@ runtime is taken up by IO.
 1› benchmark_perf|                                  -  hide-col         9 rows 
 ```
 
-What do we see? The IO time is constant as the number of cores increases indicating 
+What do we see? The IO time is constant as the number of cores increases, indicating 
 that this part of the code is serial (it does not benefit from more cores). As the 
 number of cores increases, the serial part becomes a larger and larger fraction of
 the overall run time (the calculation time decreases as it benefits from 

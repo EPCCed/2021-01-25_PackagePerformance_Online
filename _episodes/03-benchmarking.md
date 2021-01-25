@@ -12,7 +12,9 @@ objectives:
 - "Understand key benchmarking concepts and why they are useful for me."
 - "Be able to identify the correct performance metric for my HPC use."
 keypoints:
-- ""
+- "Different timing and performance metrics are used for different applications."
+- "Use the lowest node/core count that is feasible for your baseline."
+- "Plan your benchmarking before you start, make sure you understand which parameters you want to vary and why."
 ---
 
 Having looked at workflow components in general we will now move on to look
@@ -133,6 +135,12 @@ contain our benchmarking results and move into it (remember to replace
 `t001` with the correct project code for your course and `auser` with your
 username on ARCHER2).
 
+> ## Only work file system is visible on the compute nodes
+> Remember, the work file system is the only one available on the ARCHER2
+> compute nodes. All just should be launched from a directory on the work
+> file system to ensure they run correctly.
+{: .callout}
+
 ```
 cd /work/t001/t001/auser
 mkdir sharpen-bench
@@ -154,7 +162,7 @@ fuzzy.pgm
 
 ### Baseline performance
 
-For this small example, we are going to use a run on a single core as
+For this small example, we are going to use a run on a single core of a compute node as
 our baseline.
 
 > ## Baseline size
@@ -165,7 +173,7 @@ our baseline.
 > that you feasibly can for your baseline.
 {: .callout}
 
-Run the single core calculation with:
+Run the single core calculation on an ARCHER2 compute node with:
 
 ```
 srun {{ site.workshop_srun_options }} --nodes=1 --ntasks-per-node=1 --time=0:10:0  sharpen-mpi.x > sharpen_1core_001.out
@@ -176,6 +184,9 @@ srun: job 62318 queued and waiting for resources
 srun: job 62318 has been allocated resources
 ```
 {: .output}
+
+Using `srun` in this way launches the application on a compute nodes with the 
+specified resources.
 
 This line is quite long and is going to be tedious to type out each time we
 want to run a calculation so we will setup a command alias with the options
