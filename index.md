@@ -130,6 +130,10 @@ The lesson aims to answer the following questions:
 Note that this lesson uses [The Carpentries](https://carpentries.org) template but this is not a 
 Carpentries lesson.
 
+## Collaborative Document (etherpad)
+
+Access [the course etherpad]({{page.collaborative_notes}})
+
 {% include links.md %}
 
 {% comment %}
