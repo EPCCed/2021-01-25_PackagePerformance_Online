@@ -14,6 +14,25 @@ keypoints:
 - "Feedback is an essential part of our training to allow us to continue to improve and make sure the course is as useful as possible to attendees."
 ---
 
+## Code of Conduct
+
+To make this as good a learning experience as possible for everyone involved we require all
+participants to adhere to the [ARCHER2 Code of Conduct](https://www.archer2.ac.uk/training/code-of-conduct/).
+
+Any form or behaviour to exclude, intimidate, or cause discomfort is a violation of the Code of Conduct. In
+order to foster a positive and professional learning environment we encourage the following kinds of behaviours
+throughout this course:
+
+ - Use welcoming and inclusive language
+ - Be respectful of different viewpoints and experiences
+ - Gracefully accept constructive criticism
+ - Focus on what is best for the course
+ - Show courtesy and respect towards other course participants
+
+If you believe someone is violating the Code of Conduct, we ask that you report it to ARCHER2 Training Code
+of Conduct Committee [by completing this form](http://bit.ly/ARCHER-Training-Code-of-Conduct-Incident-Report),
+who will take the appropriate action to address the situation.
+
 ## Course structure and method
 
 Rather than having separate lectures and practical sessions, this course is taught following
@@ -26,7 +45,7 @@ the instructor demonstrating and then the attendees doing along with the instruc
 > is not a Carpentries lesson.
 {: .callout}
 
-There are many helpers available to assist you and to answer any questions you may have as we
+There are helpers available to assist you and to answer any questions you may have as we
 work through the material together. You should also feel free to ask questions of the instructor
 whenever you like. The instructor will also provide many opportunities to pause and ask questions.
 
