@@ -264,9 +264,11 @@ of cores we are using. So, lets vary this and see how the profile changes.
 > ## Profile on 256 cores
 > Rerun the profiling experiment on 256 cores. Look at the performance profile
 > compared to the one you have for 64 cores. Are there differences in:
->  - proportion of time spent in MPI functions;
->  - memory use; and
->  - I/O use?
+> 
+> - proportion of time spent in MPI functions;
+> - memory use; and
+> - I/O use?
+> 
 > Can you offer any explanation for the changes you observe and propose how 
 > they might affect the performance of the application?
 > Can you guess what might happen if you double the core count again to 
