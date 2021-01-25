@@ -67,7 +67,7 @@ profiling functionality added for you to use. The binary is called `sharpen-mpi-
 Let's use `srun` to run this binary on 64 cores:
 
 ```
-srunopt --nodes=1 --ntasks-per-node=64 sharpen-mpi-profile.x > sharpen_64cores_profile.dat
+srunopt --time=0:10:0 --nodes=1 --ntasks-per-node=64 sharpen-mpi-profile.x > sharpen_64cores_profile.dat
 ```
 {: .language-bash}
 ```

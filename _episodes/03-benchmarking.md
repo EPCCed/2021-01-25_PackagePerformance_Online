@@ -206,7 +206,7 @@ alias srunopt="srun {{ site.workshop_srun_options }}"
 Now we can run the baseline calculation again with:
 
 ```
-srunopt --nodes=1 --ntasks-per-node=1 sharpen-mpi.x > sharpen_1core_002.out
+srunopt --time=0:10:0 --nodes=1 --ntasks-per-node=1 sharpen-mpi.x > sharpen_1core_002.out
 ```
 {: .language-bash}
 ```
